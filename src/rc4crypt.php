@@ -1,6 +1,6 @@
 <?php
 
-namespace Breenstorm\SpbusClient;
+namespace Breenstorm\SPbusClient;
 	/* vim: set expandtab shiftwidth=4 softtabstop=4 tabstop=4: */
 
 	/**

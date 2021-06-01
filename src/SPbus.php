@@ -20,7 +20,7 @@ namespace Breenstorm\SPbusClient;
  *
  */
 // Require RC4Crypt class for RC4 encryption
-use Breenstorm\SpbusClient\rc4crypt;
+use Breenstorm\SPbusClient\rc4crypt;
 
 /**
  *
