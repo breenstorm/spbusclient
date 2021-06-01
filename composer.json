@@ -1,0 +1,17 @@
+{
+  "name": "breenstorm/spbusclient",
+  "keywords": [
+    "spbus"
+  ],
+  "description": "Schleiffenbauer SPBUS protocol client library",
+  "type": "library",
+  "license": "Apache-2.0",
+  "require": {
+    "php": "^7.0 || ^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Breenstorm\\SPbusClient\\": "src"
+    }
+  }
+}
