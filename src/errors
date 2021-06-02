@@ -1,0 +1,23 @@
+-1|data bus|STX byte missing
+-2|data bus|ETX byte missing
+-3|data bus|wrong CRC
+-4|data bus|unkown command byte
+-5|data bus|NAK received
+-6|data bus|bus locked or in use
+-7|data bus|zero's received
+-8|data bus|transaction id's do not match
+-9|data bus|no reply time out
+-10|data bus|unexpected reply length
+-11|socket|wrong message tag
+-12|socket|incorrect length byte
+-13|socket|wrong checksum
+-14|socket|check token incorrect
+-15|socket|no reply
+-16|socket|incomplete ip message received
+-17|socket|no data (vec)
+-18|socket|no data (select)
+-20|gateway|unauthorized command
+-21|gateway|unauthorized register
+-22|gateway|encapsulation error
+-23|gateway|invalid message received
+-99|script|undefined
