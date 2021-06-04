@@ -20,3 +20,4 @@ composer require breenstorm/spbus-client
 
 ## Requires
 * PHP 7.0+
+
