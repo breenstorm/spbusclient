@@ -25,7 +25,7 @@ class SPbus
 {
     // Private variables
     private $fp;
-    private $debugging = true;
+    private $debugging = false;
     // Control bytes
     private $_tag;
     private $_stx;
