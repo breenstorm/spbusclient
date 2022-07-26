@@ -1953,7 +1953,7 @@ class SPbus
         $rx_array = array();
         $return_data = array();
 
-        stream_set_timeout(($this->fp), 5);
+        stream_set_timeout(($this->fp), 1);
 
         while ((!$done) && ($tries < $this->max_retry))
         {
