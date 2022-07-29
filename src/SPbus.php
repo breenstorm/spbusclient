@@ -49,7 +49,7 @@ class SPbus
     // Errors
     private $_errors;
     private $type_pdu_connection; // GATEWAY | SERIAL_PORT | TCP_IP_CONVERTER;
-    private $max_retry = 5;
+    private $max_retry = 10;
 
     private  $time_out_connection = 2; // seconds
     private  $time_out_read = 2;
@@ -57,7 +57,7 @@ class SPbus
     private $scantimeoutoverall = 1; // seconds, the time that is needed for grabbing a gateway packed
 
     private $transaction_id = 0;
-    private $getting_data_wait = 200000; // 10 milliseconds
+    private $getting_data_wait = 400000; // 10 milliseconds
 
     /*
      * Constructor
