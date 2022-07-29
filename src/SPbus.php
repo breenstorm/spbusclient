@@ -157,6 +157,7 @@ class SPbus
             {
                 // Set a litle timeout of the created connection
                 stream_set_timeout($this->fp, $this->time_out_read);
+                stream_set_blocking ($this->fp, false);
             }
 
             if ($this->debugging == true)
