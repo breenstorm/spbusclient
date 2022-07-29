@@ -51,7 +51,8 @@ class SPbus
     private $type_pdu_connection; // GATEWAY | SERIAL_PORT | TCP_IP_CONVERTER;
     private $max_retry = 5;
 
-    private  $time_out_connection = 1; // seconds
+    private  $time_out_connection = 2; // seconds
+    private  $time_out_read = 2;
 
     private $scantimeoutoverall = 1; // seconds, the time that is needed for grabbing a gateway packed
 
@@ -155,7 +156,7 @@ class SPbus
             if($this->fp != FALSE)
             {
                 // Set a litle timeout of the created connection
-                stream_set_timeout($this->fp, 1);
+                stream_set_timeout($this->fp, $this->time_out_read);
             }
 
             if ($this->debugging == true)
@@ -1356,7 +1357,7 @@ class SPbus
         $rx_array = array();
         $get_return_message = FALSE;
 
-        stream_set_timeout(($this->fp), 1);
+        stream_set_timeout(($this->fp), $this->time_out_read);
 
 
         while ($time < $this->scantimeoutoverall)
@@ -1654,7 +1655,7 @@ class SPbus
         $rx_array = array();
         $get_return_message = FALSE;
 
-        stream_set_timeout(($this->fp), 1);
+        stream_set_timeout(($this->fp), $this->time_out_read);
 
 
         while ($time < $this->scantimeoutoverall)
@@ -1953,7 +1954,7 @@ class SPbus
         $rx_array = array();
         $return_data = array();
 
-        stream_set_timeout(($this->fp), 1);
+        stream_set_timeout(($this->fp), $this->time_out_read);
 
         while ((!$done) && ($tries < $this->max_retry))
         {
