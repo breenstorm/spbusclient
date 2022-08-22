@@ -4817,7 +4817,7 @@ class SPbus
         $hex = '';
         for ($i = 0; $i < strlen($ascii); $i++)
         {
-            $byte = strtoupper(dechex(ord($ascii{$i})));
+            $byte = strtoupper(dechex(ord($ascii[$i])));
             $byte = str_repeat('0', 2 - strlen($byte)) . $byte;
             $hex .= $byte . " ";
         }
@@ -4830,7 +4830,7 @@ class SPbus
 
         for ($i = 0; $i < strlen($ascii); $i++)
         {
-            $byte = strtoupper(ord($ascii{$i}));
+            $byte = strtoupper(ord($ascii[$i]));
             //$byte = str_repeat('0', 2 - strlen($byte)) . $byte;
 
             // Check if the length is bigger than 0
