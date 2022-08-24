@@ -52,7 +52,7 @@ class SPbus
     private $max_retry = 5;
 
     private  $time_out_connection = 2; // seconds
-    private  $time_out_read = 1;
+    private  $time_out_read = 5;
 
     private $scantimeoutoverall = 1; // seconds, the time that is needed for grabbing a gateway packed
 
