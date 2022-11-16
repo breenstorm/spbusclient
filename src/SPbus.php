@@ -3024,6 +3024,7 @@ class SPbus
     {
 
         $this->_rc4_key = $key;
+        $this->_check_bytes = substr($this->_rc4_key, 0, $this->_check_bytes_length);
 
         return TRUE;
     }
