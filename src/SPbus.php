@@ -98,8 +98,16 @@ class SPbus
         $this->time_out_read = $timeout;
     }
 
+    public function getTimeOut() {
+        return $this->time_out_read;
+    }
+
     public function setRetries($retries) {
         $this->max_retry = $retries;
+    }
+
+    public function getRetries() {
+        return $this->max_retry;
     }
 
     public function Disconnect()
